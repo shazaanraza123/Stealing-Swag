@@ -1,0 +1,326 @@
+.explore-page {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.explore-main {
+    padding: calc(var(--nav-height) + 60px) 40px 60px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.explore-hero {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.explore-hero h1 {
+    font-size: 84px;
+    font-weight: normal;
+    letter-spacing: 12px;
+    margin-bottom: 30px;
+    font-family: var(--font-primary);
+}
+
+.hero-line {
+    width: 100px;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+.explore-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Password Container Styles */
+.password-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.password-box {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.password-box h2 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    font-family: var(--font-primary);
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#password-input {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--secondary-color);
+    padding: 12px 15px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#password-input:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+#submit-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--secondary-color);
+    padding: 12px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.attempts-counter {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+#attempts-left {
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.hint-container {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.hint-text {
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* ASCII Art Container Styles */
+.ascii-art-container {
+    display: none; /* Initially hidden */
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: var(--background-color);
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.ascii-art-container.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Full screen terminal styles */
+.ascii-art-container.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.ascii-art-container.fullscreen .terminal-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.ascii-art-container.fullscreen .terminal-header {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ascii-art-container.fullscreen .terminal-output {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+.ascii-art-container.fullscreen .terminal-input-line {
+    position: sticky;
+    bottom: 0;
+    background: var(--background-color);
+    padding: 0.5rem;
+    border-top: 1px solid var(--text-color);
+}
+
+.terminal-header {
+    background-color: #2d2d2d;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+    margin-right: 15px;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.terminal-button.close {
+    background-color: #ff5f56;
+}
+
+.terminal-button.minimize {
+    background-color: #ffbd2e;
+}
+
+.terminal-button.maximize {
+    background-color: #27c93f;
+}
+
+.terminal-title {
+    color: #a0a0a0;
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.terminal-content {
+    padding: 20px;
+    font-family: 'Source Code Pro', monospace;
+    color: #f8f8f8;
+    line-height: 1.2;
+    overflow-x: auto;
+}
+
+.terminal-output {
+    white-space: pre;
+    font-size: 10px;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+.terminal-input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.terminal-input {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    flex-grow: 1;
+    outline: none;
+    caret-color: var(--text-color);
+}
+
+.terminal-input:focus {
+    outline: none;
+}
+
+.prompt {
+    color: var(--text-color);
+    margin-right: 0.5rem;
+}
+
+.cursor {
+    color: var(--text-color);
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .explore-hero h1 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    .explore-main {
+        padding: calc(var(--nav-height) + 40px) 20px 40px;
+    }
+
+    .explore-hero h1 {
+        font-size: 48px;
+        letter-spacing: 8px;
+    }
+
+    .password-box {
+        padding: 30px 20px;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    #submit-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .terminal-output {
+        font-size: 8px;
+    }
+} 

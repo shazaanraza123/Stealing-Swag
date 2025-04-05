@@ -1,0 +1,138 @@
+.skills-page {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.skills-main {
+    padding: calc(var(--nav-height) + 60px) 40px 60px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.skills-hero {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.skills-hero h1 {
+    font-size: 84px;
+    font-weight: normal;
+    letter-spacing: 12px;
+    margin-bottom: 30px;
+    font-family: var(--font-primary);
+}
+
+.hero-line {
+    width: 100px;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.skill-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.skill-header i {
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.skill-header h2 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    font-family: var(--font-primary);
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.skill-name {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: var(--font-primary);
+}
+
+.skill-description {
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: right;
+    font-family: var(--font-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-hero h1 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-main {
+        padding: calc(var(--nav-height) + 40px) 20px 40px;
+    }
+
+    .skills-hero h1 {
+        font-size: 48px;
+        letter-spacing: 8px;
+    }
+
+    .skill-header h2 {
+        font-size: 20px;
+    }
+
+    .skill-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .skill-description {
+        text-align: left;
+    }
+} 

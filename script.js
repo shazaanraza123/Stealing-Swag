@@ -93,32 +93,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Carousel scroll hiding functionality
+    let lastScrollTop = 0;
     const carousel = document.querySelector('.language-carousel');
-    if (carousel) {
-        let lastScrollTop = 0;
-        let scrollThreshold = 20; // Larger threshold so carousel stays visible longer
+    const body = document.body;
+    const scrollThreshold = 10; // Minimum scroll amount to trigger hide/show
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        // Show carousel by default
-        carousel.classList.remove('hidden');
-        
-        // Hide carousel immediately if page is already scrolled significantly
-        if (window.scrollY > 100) {
+        // Scrolling down
+        if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
             carousel.classList.add('hidden');
+            body.classList.add('carousel-hidden');
+        }
+        // Scrolling up and at top
+        else if (scrollTop < lastScrollTop && scrollTop < scrollThreshold) {
+            carousel.classList.remove('hidden');
+            body.classList.remove('carousel-hidden');
         }
         
-        window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // Hide carousel after scrolling past threshold
-            if (scrollTop > scrollThreshold) {
-                carousel.classList.add('hidden');
-            } 
-            // Show carousel when close to top
-            else if (scrollTop < 10) {
-                carousel.classList.remove('hidden');
-            }
-            
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        });
+        lastScrollTop = scrollTop;
+    });
+
+    // Remove any menu buttons that might be added dynamically
+    function removeMenuButtons() {
+        const menuButtons = document.querySelectorAll('button[type="menu"], [role="menu"], .menu-icon, .menu-button, .hamburger-menu');
+        menuButtons.forEach(button => button.remove());
     }
-}); 
+
+    // Run initially
+    removeMenuButtons();
+
+    // Create an observer to watch for dynamically added elements
+    const menuObserver = new MutationObserver(function(mutations) {
+        removeMenuButtons();
+    });
+
+    // Start observing the document with the configured parameters
+    menuObserver.observe(document.body, { childList: true, subtree: true });
+});
+
+// Prevent default menu behavior
+document.addEventListener('click', function(e) {
+    if (e.target.matches('button[type="menu"], [role="menu"], .menu-icon, .menu-button, .hamburger-menu')) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+}, true); 

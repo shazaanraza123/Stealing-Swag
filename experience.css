@@ -1,0 +1,182 @@
+.experience-page {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.experience-main {
+    padding: calc(var(--nav-height) + 60px) 40px 60px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.experience-hero {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.experience-hero h1 {
+    font-size: 84px;
+    font-weight: normal;
+    letter-spacing: 12px;
+    margin-bottom: 30px;
+    font-family: var(--font-primary);
+}
+
+.hero-line {
+    width: 100px;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+.experience-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.experience-card:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.experience-card:hover::before {
+    transform: translateX(100%);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.role-info h2 {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    margin: 0 0 15px 0;
+    font-family: var(--font-primary);
+}
+
+.role-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+.company {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.duration, .location {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.role-icon {
+    font-size: 24px;
+    opacity: 0.8;
+    margin-left: 20px;
+}
+
+.role-icon i {
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover .role-icon i {
+    transform: scale(1.2);
+}
+
+.experience-content {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.achievements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievements li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.achievements li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .experience-hero h1 {
+        font-size: 64px;
+    }
+
+    .role-info h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-main {
+        padding: calc(var(--nav-height) + 40px) 20px 40px;
+    }
+
+    .experience-hero h1 {
+        font-size: 48px;
+        letter-spacing: 8px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .role-icon {
+        margin: 20px 0 0 0;
+    }
+
+    .role-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .role-info h2 {
+        font-size: 24px;
+    }
+} 

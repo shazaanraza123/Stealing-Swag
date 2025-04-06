@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ABOUT - SHAZAAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | SHAZAAN</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
 </head>
-<body class="about-page">
+<body>
     <header>
         <nav class="main-nav">
             <div class="nav-container">
@@ -18,8 +17,8 @@
                     <a href="projects.html">PORTFOLIO</a>
                     <a href="skills.html">SKILLS</a>
                     <a href="experience.html">EXPERIENCE</a>
-                    <a href="about.html">ABOUT</a>
-                    <a href="#explore">EXPLORE</a>
+                    <a href="about.html" class="active">ABOUT</a>
+                    <a href="explore.html">EXPLORE</a>
                 </div>
 
                 <div class="logo">
@@ -27,7 +26,7 @@
                 </div>
 
                 <div class="nav-right">
-                    <a href="#contact">CLIENT SERVICES</a>
+                    <a href="contact.html">CLIENT SERVICES</a>
                     <a href="#login">LOGIN</a>
                     <a href="#" class="icon-link"><i class="far fa-bookmark"></i></a>
                     <a href="#" class="icon-link"><i class="fas fa-shopping-bag"></i></a>
@@ -36,76 +35,118 @@
         </nav>
     </header>
 
-    <main class="about-main">
-        <section class="about-hero">
-            <h1>ABOUT</h1>
-            <div class="hero-line"></div>
+    <main class="page-container">
+        <div class="page-header fade-in">
+            <h1>ABOUT ME</h1>
+            <p>Software engineer, designer, and creative technologist.</p>
+        </div>
+
+        <section class="section fade-in">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Shazaan Raza" class="profile-image">
+                </div>
+                <div class="about-content">
+                    <h2>WHO I AM</h2>
+                    <p>I'm Shazaan Raza, a software engineer and designer based in Chicago. With a passion for creating innovative digital experiences, I combine technical expertise with creative vision to build solutions that make a difference.</p>
+                    
+                    <h2>WHAT I DO</h2>
+                    <p>I specialize in full-stack development, with a focus on creating responsive and user-friendly web applications. My approach combines clean code with intuitive design, ensuring both functionality and aesthetics are optimized.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>20+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <div class="about-content">
-            <div class="about-section welcome-section">
-                <div class="section-header">
-                    <h2>WELCOME</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="section-content">
-                    <p>Welcome to my digital space! I'm Shazaan Raza, a dynamic Content Creator, Designer, and Web Developer with a penchant for creating engaging digital experiences that resonate with a global audience. My academic journey in computer science at the Illinois Institute of Technology has equipped me with a robust toolkit, propelling my freelance career where I blend technology and creativity to forge impactful digital content and innovative web solutions.</p>
-                </div>
+        <section class="section fade-in">
+            <div class="section-header">
+                <h2>MY APPROACH</h2>
+                <p>How I tackle challenges and deliver results</p>
             </div>
 
-            <div class="about-section inspiration-section">
-                <div class="section-header">
-                    <h2>INSPIRATION & CREATIVITY</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="section-content">
-                    <p>Fashion and design are not just interests but passions that drive my creative process. I draw significant inspiration from Virgil Abloh, whose visionary approach to fashion and design transcends traditional boundaries. Like Virgil, I strive to infuse originality and a forward-thinking perspective into all my projects, whether it's developing a website or curating a social media campaign.</p>
-                    <div class="inspiration-image">
-                        <img src="images/virgil.jpg" alt="Virgil Abloh">
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <div class="approach-icon">
+                        <i class="fas fa-lightbulb"></i>
                     </div>
+                    <h3>Innovative Thinking</h3>
+                    <p>I approach each project with fresh perspectives and creative solutions, pushing boundaries while maintaining practicality.</p>
                 </div>
+
+                <div class="approach-item">
+                    <div class="approach-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaborative Spirit</h3>
+                    <p>I believe in the power of teamwork and open communication, ensuring all stakeholders are aligned throughout the project lifecycle.</p>
+                </div>
+
+                <div class="approach-item">
+                    <div class="approach-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Results-Driven</h3>
+                    <p>My focus is on delivering measurable results that exceed expectations and drive business growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <div class="section-header">
+                <h2>INTERESTS & HOBBIES</h2>
+                <p>Beyond the code and design</p>
             </div>
 
-            <div class="about-section music-section">
-                <div class="section-header">
-                    <h2>MUSIC & LIFESTYLE</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="section-content">
-                    <p>Music is the heartbeat of my creative inspiration. It not only energizes my workflow but also influences my aesthetic sensibilities. Dive into my world of musical influences by checking out my Spotify playlist, a curated selection that keeps me motivated and inspired throughout the day.</p>
-                    <div class="spotify-embed">
-                        <iframe src="https://open.spotify.com/embed/playlist/7KZKWIXyYUr25fOrQCOCsC" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <div class="interest-icon">
+                        <i class="fas fa-camera"></i>
                     </div>
+                    <h3>Photography</h3>
+                    <p>Capturing moments and exploring visual storytelling</p>
                 </div>
-            </div>
 
-            <div class="about-section connect-section">
-                <div class="section-header">
-                    <h2>CONNECT & COLLABORATE</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="section-content">
-                    <p>Are you looking for a designer who can bring a fresh perspective to your project? Or a developer who understands the pulse of the digital world? Let's connect and explore how we can create something spectacular together. Reach out to me on LinkedIn or visit my personal website to learn more about my work and vision.</p>
-                    <div class="social-links">
-                        <a href="#linkedin" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LINKEDIN</span>
-                        </a>
-                        <a href="#github" class="social-link">
-                            <i class="fab fa-github"></i>
-                            <span>GITHUB</span>
-                        </a>
-                        <a href="#instagram" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                            <span>INSTAGRAM</span>
-                        </a>
-                        <a href="#twitter" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                            <span>TWITTER</span>
-                        </a>
+                <div class="interest-item">
+                    <div class="interest-icon">
+                        <i class="fas fa-music"></i>
                     </div>
+                    <h3>Music Production</h3>
+                    <p>Creating and mixing electronic music</p>
+                </div>
+
+                <div class="interest-item">
+                    <div class="interest-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Hiking</h3>
+                    <p>Exploring nature and finding inspiration outdoors</p>
+                </div>
+
+                <div class="interest-item">
+                    <div class="interest-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Reading</h3>
+                    <p>Tech literature and science fiction</p>
                 </div>
             </div>
+        </section>
+
+        <div class="text-center">
+            <a href="contact.html" class="button">GET IN TOUCH</a>
         </div>
     </main>
 
@@ -134,7 +175,7 @@
             <div class="footer-section">
                 <h4>CONTACT</h4>
                 <ul>
-                    <li><a href="#contact">Get in Touch</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
                     <li><a href="#location">Chicago, IL</a></li>
                     <li><a href="tel:+16306753263">+1 630 675 3263</a></li>
                     <li><a href="mailto:shazaanraza123@gmail.com">Email Me</a></li>

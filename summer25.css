@@ -1,0 +1,133 @@
+.collection-filters {
+    padding: 20px 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-tags {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.filter-tags::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-tag {
+    color: #999;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.filter-tag:hover,
+.filter-tag.active {
+    color: #000;
+}
+
+.collection-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 40px;
+    margin-bottom: 60px;
+}
+
+.product-card {
+    position: relative;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 133.33%; /* 3:4 aspect ratio */
+    overflow: hidden;
+}
+
+.product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-link:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.bookmark-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 5px;
+}
+
+.bookmark-btn:hover {
+    color: #999;
+}
+
+.product-info {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.product-info h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+}
+
+.price {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+
+    .collection-filters {
+        padding: 15px 20px;
+    }
+
+    .collection-title {
+        font-size: 20px;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+} 

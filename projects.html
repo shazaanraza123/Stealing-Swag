@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>FEATURED PROJECTS - SHAZAAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | SHAZAAN</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
 </head>
-<body class="projects-page">
+<body>
     <header>
         <nav class="main-nav">
             <div class="nav-container">
                 <div class="nav-left">
                     <a href="summer25.html">SUMMER 25</a>
-                    <a href="projects.html">PORTFOLIO</a>
+                    <a href="projects.html" class="active">PORTFOLIO</a>
                     <a href="skills.html">SKILLS</a>
                     <a href="experience.html">EXPERIENCE</a>
                     <a href="about.html">ABOUT</a>
@@ -27,7 +26,7 @@
                 </div>
 
                 <div class="nav-right">
-                    <a href="#contact">CLIENT SERVICES</a>
+                    <a href="contact.html">CLIENT SERVICES</a>
                     <a href="#login">LOGIN</a>
                     <a href="#" class="icon-link"><i class="far fa-bookmark"></i></a>
                     <a href="#" class="icon-link"><i class="fas fa-shopping-bag"></i></a>
@@ -36,181 +35,73 @@
         </nav>
     </header>
 
-    <main class="projects-main">
-        <section class="projects-hero">
-            <h1>FEATURED PROJECTS</h1>
-            <div class="hero-line"></div>
+    <main class="page-container">
+        <div class="page-header fade-in">
+            <h1>PORTFOLIO</h1>
+            <p>A collection of my selected works and projects showcasing my expertise in web development, design, and creative solutions.</p>
+        </div>
+
+        <section class="section fade-in">
+            <div class="section-header">
+                <h2>FEATURED PROJECTS</h2>
+                <p>Highlighting some of my most impactful and innovative work</p>
+            </div>
+
+            <div class="grid">
+                <article class="card">
+                    <div class="card-image">
+                        <img src="images/bal2.jpg" alt="Project 1">
+                    </div>
+                    <h3>SUMMER 25 COLLECTION</h3>
+                    <p>A modern e-commerce platform showcasing luxury fashion with a focus on minimalist design and seamless user experience.</p>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="images/bal3.png" alt="Project 2">
+                    </div>
+                    <h3>PORTFOLIO WEBSITE</h3>
+                    <p>A personal portfolio website built with modern web technologies, featuring responsive design and smooth animations.</p>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="images/bal4.jpg" alt="Project 3">
+                    </div>
+                    <h3>CLIENT SERVICES PLATFORM</h3>
+                    <p>A comprehensive client management system with integrated communication tools and analytics dashboard.</p>
+                    <div class="tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h2>ARTIST-WORDLE</h2>
-                    <div class="project-links">
-                        <a href="#demo" class="project-link">LIVE DEMO</a>
-                        <a href="#code" class="project-link">VIEW CODE</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">A web application where users guess artist names based on pixelated album covers.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">HTML/CSS</span>
-                    </div>
-                    <div class="project-features">
-                        <span class="feature-item">Game logic</span>
-                        <span class="feature-item">User interface design</span>
-                    </div>
-                </div>
+        <section class="section fade-in">
+            <div class="section-header">
+                <h2>RECENT WORK</h2>
+                <p>Latest projects and collaborations</p>
             </div>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <h2>NBA PREDICTOR</h2>
-                    <div class="project-links">
-                        <a href="#demo" class="project-link">LIVE DEMO</a>
-                        <a href="#code" class="project-link">VIEW CODE</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">Machine learning model that predicts NBA game outcomes.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Scikit-Learn</span>
-                    </div>
-                    <div class="project-features">
-                        <span class="feature-item">Data analysis</span>
-                        <span class="feature-item">Model training</span>
-                    </div>
-                </div>
+            <div class="grid">
+                <!-- Add more project cards here -->
             </div>
+        </section>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <h2>TIKTOK FEEDBACK BOT</h2>
-                    <div class="project-links">
-                        <a href="#demo" class="project-link">LIVE DEMO</a>
-                        <a href="#code" class="project-link">VIEW CODE</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">Automated bot for collecting and reporting user feedback on TikTok.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                    </div>
-                    <div class="project-features">
-                        <span class="feature-item">Automation</span>
-                        <span class="feature-item">Data collection</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h2>PERSONAL WEBSITE</h2>
-                    <div class="project-links">
-                        <a href="#demo" class="project-link">LIVE DEMO</a>
-                        <a href="#code" class="project-link">VIEW CODE</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">Responsive personal portfolio website showcasing projects and skills.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML/CSS</span>
-                    </div>
-                    <div class="project-features">
-                        <span class="feature-item">Web design</span>
-                        <span class="feature-item">Responsiveness</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h2>YOUTUBE DOWNLOADER</h2>
-                    <div class="project-links">
-                        <a href="#demo" class="project-link">LIVE DEMO</a>
-                        <a href="#code" class="project-link">VIEW CODE</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">Tool for downloading YouTube videos in various formats.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Roff</span>
-                        <span class="tech-tag">YouTube API</span>
-                    </div>
-                    <div class="project-features">
-                        <span class="feature-item">Video downloading</span>
-                        <span class="feature-item">API integration</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h2>YEEZER</h2>
-                    <div class="project-links">
-                        <a href="#demo" class="project-link">LIVE DEMO</a>
-                        <a href="#code" class="project-link">VIEW CODE</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">Interactive web game for guessing Kanye West songs.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">HTML/CSS</span>
-                        <span class="tech-tag">Spotify API</span>
-                    </div>
-                    <div class="project-features">
-                        <span class="feature-item">Real-time music playback</span>
-                        <span class="feature-item">User interaction</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h2>QR CODE GENERATOR</h2>
-                    <div class="project-links">
-                        <a href="#demo" class="project-link">LIVE DEMO</a>
-                        <a href="#code" class="project-link">VIEW CODE</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">Generates QR codes from user input.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                    <div class="project-features">
-                        <span class="feature-item">QR code generation</span>
-                        <span class="feature-item">Customization options</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h2>YEEZY MARKETING</h2>
-                    <div class="project-links">
-                        <a href="#demo" class="project-link">VIEW CAMPAIGN</a>
-                        <a href="#code" class="project-link">CASE STUDY</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">Social media campaign for Yeezy's Vultures 1 and YZY PODS.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Social Media</span>
-                        <span class="tech-tag">Analytics</span>
-                    </div>
-                    <div class="project-features">
-                        <span class="feature-item">Campaign strategy</span>
-                        <span class="feature-item">Performance analysis</span>
-                    </div>
-                </div>
-            </div>
+        <div class="text-center">
+            <a href="contact.html" class="button">GET IN TOUCH</a>
         </div>
     </main>
 
@@ -239,7 +130,7 @@
             <div class="footer-section">
                 <h4>CONTACT</h4>
                 <ul>
-                    <li><a href="#contact">Get in Touch</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
                     <li><a href="#location">Chicago, IL</a></li>
                     <li><a href="tel:+16306753263">+1 630 675 3263</a></li>
                     <li><a href="mailto:shazaanraza123@gmail.com">Email Me</a></li>

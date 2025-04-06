@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>EXPLORE - SHAZAAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore | SHAZAAN</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="explore.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="explore-page">
+<body>
     <header>
         <nav class="main-nav">
             <div class="nav-container">
@@ -20,7 +18,7 @@
                     <a href="skills.html">SKILLS</a>
                     <a href="experience.html">EXPERIENCE</a>
                     <a href="about.html">ABOUT</a>
-                    <a href="explore.html">EXPLORE</a>
+                    <a href="explore.html" class="active">EXPLORE</a>
                 </div>
 
                 <div class="logo">
@@ -28,7 +26,7 @@
                 </div>
 
                 <div class="nav-right">
-                    <a href="#contact">CLIENT SERVICES</a>
+                    <a href="contact.html">CLIENT SERVICES</a>
                     <a href="#login">LOGIN</a>
                     <a href="#" class="icon-link"><i class="far fa-bookmark"></i></a>
                     <a href="#" class="icon-link"><i class="fas fa-shopping-bag"></i></a>
@@ -37,49 +35,136 @@
         </nav>
     </header>
 
-    <main class="explore-main">
-        <section class="explore-hero">
+    <main class="page-container">
+        <div class="page-header fade-in">
             <h1>EXPLORE</h1>
-            <div class="hero-line"></div>
+            <p>Discover my latest work, thoughts, and inspirations.</p>
+        </div>
+
+        <section class="section fade-in">
+            <div class="section-header">
+                <h2>LATEST BLOG POSTS</h2>
+                <p>Insights and reflections on technology, design, and creativity</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog1.jpg" alt="The Future of Web Design">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 15, 2024</span>
+                        <h3>The Future of Web Design</h3>
+                        <p>Exploring emerging trends and technologies shaping the future of web design and development.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog2.jpg" alt="Building Scalable Applications">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 10, 2024</span>
+                        <h3>Building Scalable Applications</h3>
+                        <p>Best practices and architectural patterns for creating scalable web applications.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog3.jpg" alt="UI/UX Design Principles">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 5, 2024</span>
+                        <h3>UI/UX Design Principles</h3>
+                        <p>Essential principles for creating user-friendly and aesthetically pleasing interfaces.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <div class="explore-content">
-            <div class="password-container" id="password-container">
-                <div class="password-box">
-                    <h2>ENTER THE PASSWORD</h2>
-                    <div class="input-container">
-                        <input type="text" id="password-input" placeholder="Password" autocomplete="off">
-                        <button id="submit-btn">SUBMIT</button>
-                    </div>
-                    <div class="attempts-counter">
-                        <span id="attempts-left">3</span> attempts remaining
-                    </div>
-                    <div class="hint-container" id="hint-container">
-                        <p class="hint-text">Who's the best artist of all time?</p>
-                    </div>
-                </div>
+        <section class="section fade-in">
+            <div class="section-header">
+                <h2>FEATURED RESOURCES</h2>
+                <p>Free tools and resources for developers and designers</p>
             </div>
 
-            <div class="ascii-art-container" id="ascii-art-container">
-                <div class="terminal-header">
-                    <div class="terminal-buttons">
-                        <span class="terminal-button close"></span>
-                        <span class="terminal-button minimize"></span>
-                        <span class="terminal-button maximize"></span>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <div class="terminal-title">ASCII Art Terminal</div>
+                    <h3>Code Snippets</h3>
+                    <p>A collection of useful code snippets for common web development tasks.</p>
+                    <a href="#" class="button">Download</a>
                 </div>
-                <div class="terminal-content">
-                    <div class="terminal-output" id="ascii-art-output">
-                        <!-- ASCII art will be inserted here via JavaScript -->
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-palette"></i>
                     </div>
-                    <div class="terminal-input-line">
-                        <span class="prompt">$</span>
-                        <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false">
-                        <span class="cursor">_</span>
+                    <h3>Design Templates</h3>
+                    <p>Ready-to-use design templates and UI components.</p>
+                    <a href="#" class="button">Download</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Development Guide</h3>
+                    <p>Comprehensive guide for modern web development practices.</p>
+                    <a href="#" class="button">Download</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <div class="section-header">
+                <h2>UPCOMING EVENTS</h2>
+                <p>Workshops, webinars, and speaking engagements</p>
+            </div>
+
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="month">APR</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Web Development Workshop</h3>
+                        <p>Learn modern web development techniques and best practices.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Chicago, IL</span>
+                            <span><i class="fas fa-clock"></i> 2:00 PM CST</span>
+                        </div>
+                        <a href="#" class="button">Register</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="month">APR</span>
+                        <span class="day">22</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>UI/UX Design Webinar</h3>
+                        <p>Deep dive into creating effective user interfaces and experiences.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-video"></i> Online</span>
+                            <span><i class="fas fa-clock"></i> 1:00 PM CST</span>
+                        </div>
+                        <a href="#" class="button">Register</a>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <div class="text-center">
+            <a href="contact.html" class="button">GET IN TOUCH</a>
         </div>
     </main>
 
@@ -108,7 +193,7 @@
             <div class="footer-section">
                 <h4>CONTACT</h4>
                 <ul>
-                    <li><a href="#contact">Get in Touch</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
                     <li><a href="#location">Chicago, IL</a></li>
                     <li><a href="tel:+16306753263">+1 630 675 3263</a></li>
                     <li><a href="mailto:shazaanraza123@gmail.com">Email Me</a></li>
@@ -121,6 +206,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="explore.js"></script>
 </body>
 </html> 

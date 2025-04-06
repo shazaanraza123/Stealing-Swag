@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | SHAZAAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SKILLS & EXPERTISE - SHAZAAN</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="skills-page">
     <header>
         <nav class="main-nav">
             <div class="nav-container">
                 <div class="nav-left">
                     <a href="summer25.html">SUMMER 25</a>
                     <a href="projects.html">PORTFOLIO</a>
-                    <a href="skills.html" class="active">SKILLS</a>
+                    <a href="skills.html">SKILLS</a>
                     <a href="experience.html">EXPERIENCE</a>
                     <a href="about.html">ABOUT</a>
                     <a href="explore.html">EXPLORE</a>
@@ -26,7 +27,7 @@
                 </div>
 
                 <div class="nav-right">
-                    <a href="contact.html">CLIENT SERVICES</a>
+                    <a href="#contact">CLIENT SERVICES</a>
                     <a href="#login">LOGIN</a>
                     <a href="#" class="icon-link"><i class="far fa-bookmark"></i></a>
                     <a href="#" class="icon-link"><i class="fas fa-shopping-bag"></i></a>
@@ -35,153 +36,158 @@
         </nav>
     </header>
 
-    <main class="page-container">
-        <div class="page-header fade-in">
+    <main class="skills-main">
+        <section class="skills-hero">
             <h1>SKILLS & EXPERTISE</h1>
-            <p>A comprehensive overview of my technical capabilities and professional expertise.</p>
-        </div>
-
-        <section class="section fade-in">
-            <div class="section-header">
-                <h2>DEVELOPMENT</h2>
-                <p>Core programming languages and frameworks</p>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/html-css.png" alt="HTML/CSS" width="40">
-                    </div>
-                    <h3>HTML/CSS</h3>
-                    <p>Advanced</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/javascript.png" alt="JavaScript" width="40">
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>Advanced</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/react.png" alt="React" width="40">
-                    </div>
-                    <h3>React</h3>
-                    <p>Advanced</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/nodejs.png" alt="Node.js" width="40">
-                    </div>
-                    <h3>Node.js</h3>
-                    <p>Intermediate</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/python.png" alt="Python" width="40">
-                    </div>
-                    <h3>Python</h3>
-                    <p>Advanced</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/typescript.png" alt="TypeScript" width="40">
-                    </div>
-                    <h3>TypeScript</h3>
-                    <p>Intermediate</p>
-                </div>
-            </div>
+            <div class="hero-line"></div>
         </section>
 
-        <section class="section fade-in">
-            <div class="section-header">
-                <h2>TOOLS & TECHNOLOGIES</h2>
-                <p>Development tools and platforms I work with</p>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/git.png" alt="Git" width="40">
-                    </div>
-                    <h3>Git</h3>
-                    <p>Advanced</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>PROGRAMMING LANGUAGES</h2>
                 </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/docker.png" alt="Docker" width="40">
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-description">High-performance applications</span>
                     </div>
-                    <h3>Docker</h3>
-                    <p>Intermediate</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/mongodb.png" alt="MongoDB" width="40">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-description">Data science, automation</span>
                     </div>
-                    <h3>MongoDB</h3>
-                    <p>Advanced</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="images/sql.png" alt="SQL" width="40">
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-description">Web development, interactivity</span>
                     </div>
-                    <h3>SQL</h3>
-                    <p>Advanced</p>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-description">Front-end design</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-description">Database management</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Racket</span>
+                        <span class="skill-description">Functional programming</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">RISC-V</span>
+                        <span class="skill-description">Assembly language</span>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section class="section fade-in">
-            <div class="section-header">
-                <h2>SOFT SKILLS</h2>
-                <p>Professional attributes and interpersonal abilities</p>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Team Leadership</h3>
-                    <p>5+ years experience</p>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h2>MARKETING</h2>
                 </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-tasks"></i>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <span class="skill-name">Market Research</span>
+                        <span class="skill-description">Consumer behavior analysis</span>
                     </div>
-                    <h3>Project Management</h3>
-                    <p>Advanced</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-comments"></i>
+                    <div class="skill-item">
+                        <span class="skill-name">Campaign Strategy</span>
+                        <span class="skill-description">Planning and execution</span>
                     </div>
-                    <h3>Communication</h3>
-                    <p>Expert</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-lightbulb"></i>
+                    <div class="skill-item">
+                        <span class="skill-name">Trend Analysis</span>
+                        <span class="skill-description">Forecasting market movements</span>
                     </div>
-                    <h3>Problem Solving</h3>
-                    <p>Expert</p>
                 </div>
             </div>
-        </section>
 
-        <div class="text-center">
-            <a href="contact.html" class="button">GET IN TOUCH</a>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>SOCIAL MEDIA MANAGEMENT</h2>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <span class="skill-name">Content Creation</span>
+                        <span class="skill-description">Engaging multimedia content</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Brand Relations</span>
+                        <span class="skill-description">Partnerships and collaborations</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Audience Engagement</span>
+                        <span class="skill-description">Community building</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-tools"></i>
+                    <h2>TOOLS & TECHNOLOGIES</h2>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <span class="skill-name">Git</span>
+                        <span class="skill-description">Version control</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CapCut</span>
+                        <span class="skill-description">Video editing</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Adobe InDesign</span>
+                        <span class="skill-description">Layout design</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Adobe Illustrator</span>
+                        <span class="skill-description">Graphic design</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-microscope"></i>
+                    <h2>DATA & ML</h2>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <span class="skill-name">Pandas & NumPy</span>
+                        <span class="skill-description">Data manipulation</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Matplotlib</span>
+                        <span class="skill-description">Data visualization</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Scikit-learn</span>
+                        <span class="skill-description">Machine learning models</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-code"></i>
+                    <h2>WEB DEVELOPMENT</h2>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <span class="skill-name">Responsive Design</span>
+                        <span class="skill-description">Mobile and desktop</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">UI/UX</span>
+                        <span class="skill-description">User interface and experience</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Full-Stack Development</span>
+                        <span class="skill-description">Client and server-side</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -210,7 +216,7 @@
             <div class="footer-section">
                 <h4>CONTACT</h4>
                 <ul>
-                    <li><a href="contact.html">Get in Touch</a></li>
+                    <li><a href="#contact">Get in Touch</a></li>
                     <li><a href="#location">Chicago, IL</a></li>
                     <li><a href="tel:+16306753263">+1 630 675 3263</a></li>
                     <li><a href="mailto:shazaanraza123@gmail.com">Email Me</a></li>
